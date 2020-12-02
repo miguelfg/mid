@@ -1,51 +1,78 @@
+import os
+from os import read
 import urllib
 import requests
 from bs4 import BeautifulSoup
+from slugify import slugify
 
 # desktop user-agent
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100101 Firefox/65.0"
-# mobile user-agent
-MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+BASENAME = "https://google.com"
 
-def search(query):
+def search(url=None, query=None, page=1):
 
-    query = query.replace(' ', '+')
-    URL = f"https://google.com/search?q={query}"
-
+    print(f"Searching for page: {page} in URL {url}")
+    
     headers = {"user-agent": USER_AGENT}
-    resp = requests.get(URL, headers=headers)
+
+    ohtml_path = "data/tcu/searches/{}.{}.html".format(
+        slugify(query), page)
+
+    if os.path.exists(ohtml_path):
+        print("Reading saved search")
+        with open(ohtml_path, 'r') as ihtml:
+            html = ihtml.read()
+            status_code = 200
+
+    else:
+        print("Running new search")
+        resp = requests.get(url, headers=headers)
+        html = resp.text
+        status_code = resp.status_code
+        with open(ohtml_path, 'w') as ohtml:
+            ohtml.write(html)
+
+    if status_code == 200:
+        # soup = BeautifulSoup(resp.content, "html.parser")
+        soup = BeautifulSoup(html, 'lxml')
+
+        return soup
+    
+    return None
+
+def get_pdf_urls(soup):
 
     urls = []
-    if resp.status_code == 200:
-        # soup = BeautifulSoup(resp.content, "html.parser")
-        soup = BeautifulSoup(resp.text, 'lxml')
-        results = []
-        for g in soup.find_all('h3'):
-            # print(g)
-            # print(g.parent.parent.a['href'])
-            urls.append(g.parent.parent.a['href'])
-            # print(urls)
-        #     p = g.parent.parent
-        #     if p.a and 'href' in p.a:
-        #         print(p.a['href'])
-        #     anchors = g.find_all('a')
-
-        #     if anchors:
-        #         link = anchors[0]['href']
-        #         title = g.find('h3').text
-        #         item = {
-        #             "title": title,
-        #             "link": link
-        #         }
-        #         results.append(item)
-        # print(results)
-        print(urls)
+    for g in soup.find_all('h3'):
+        urls.append(g.parent.parent.a['href'])
 
     with open("tcu_informes.txt", "a") as ofile:
         ofile.write("\n".join(urls))
         ofile.write("\n")
 
+    return urls
+
+def get_result_pages(soup):
+    pages = [p['href'] for p in soup.find_all('a', class_='fl')]
+    pages = [BASENAME + p for p in pages]
+    return pages
+
 
 if __name__ == "__main__":
     query = "site:https://www.tcu.es/repositorio/+filetype:pdf"
-    search(query)
+    query = query.replace(' ', '+')
+    url = f"{BASENAME}/search?q={query}"
+    soup = search(url=url, query=query)
+    pdfs = get_pdf_urls(soup)
+    pages = get_result_pages(soup)
+
+    for i, p in enumerate(pages, start=2):
+        soup = search(url=p, query=query, page=i)
+        pdfs = get_pdf_urls(soup)
+        ps = get_result_pages(soup)
+        print("\n".join(ps))
+        for new_p in ps:
+            if new_p not in pages:
+                "Appended new page result that we didn't have before"
+                pages.append(new_p)
+                

@@ -29,6 +29,9 @@ https://docs.docker.com/engine/install/
 
 ## Resetear
 
+## Settings
+### Idioma
+
 ## Analizar
 
 ### Extraer texto
@@ -40,6 +43,8 @@ https://docs.docker.com/engine/install/
 ## Buscar
 
 ### Filtros
+
+### Percepciones/Estadísticas
 
 ### Búsquedas simples
 
@@ -53,6 +58,8 @@ https://github.com/ICIJ/datashare/wiki/Datashare-Server-Mode
 
 ## Github
 
+## Soporte
+https://github.com/ICIJ/datashare/wiki/Datashare-Support
 
 ## FAQ
 https://icij.gitbook.io/datashare/faq/table-of-contents

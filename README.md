@@ -5,7 +5,7 @@
 ## Preguntas
 
 - Como evitar descargar los NLP models en clase?? 
-
+- Settings : Parser Parallelism ??
 ## Datos
 
 * BOE
@@ -88,6 +88,8 @@ https://docs.docker.com/engine/install/
 1. Etiquetas y detalles
 1. Entidades identificadas
 
+### Buscar en campos específicos
+
 ### Búsqueda dentro del Documento
 
 ### Filtros
@@ -120,9 +122,35 @@ https://docs.docker.com/engine/install/
 
 ### Búsquedas avanzadas
 
+1. Operadores de búsqueda: AND, OR, NOT
+1. Exact phrase ""
+1. Fuzziness ~
+1. Proximity 
+1. Wildcards ?
+1. Boosting operators
+1. Regex
+1. Campos de meteadata
+1. operadores >,=,<
+1. rango de números
+
+### Ejercicios
+
+
+1. Ver preview de un BOE
+1. Aplicar filtro: de 01/01/2019 a 12/01/2020
+1. Aplicar filtro: de 01/01/2019 a 12/01/2020
+1. Aplicar filtro por metadata.tika_metadata_author de un doc
+
+
+1. Buscar por NE.location='pontevedra'
+1. Instalar plugin Email
+1. Ordenar valores en filtro Email por ocurrencia ascendente
+1. Fechas de creación para los pdf de la carpeta BOE
+1. Batch search
+
 ### Buscar por lotes
 
-### Historial de búsquedas
+### Historial de archivos visitados
 
 ## Modo Servidor
 

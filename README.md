@@ -2,12 +2,26 @@
 
 ## Descripción
 
+## Preguntas
+
+- Como evitar descargar los NLP models en clase?? 
+
 ## Datos
 
-- https://www.rendiciondecuentas.es/es/noticias/InformesAprobados.html
-- https://www.consejodecuentas.es/es/informes/informes
+* BOE
+* TCU
+  - https://www.rendiciondecuentas.es/es/noticias/InformesAprobados.html
+* Apache Lista de Correo
+  - Emails
+* Alcaldías
+  - Spreadsheets
 
+### Extra
 
+- Wikileaks
+  * https://archive.org/details/RenderedSyria
+  * https://web.archive.org/web/20161109152810/https://file.wikileaks.org/file/podesta-emails/podesta-emails.mbox-2016-11-06.gz
+  
 ## Descargar
 
 https://datashare.icij.org/
@@ -17,13 +31,14 @@ https://datashare.icij.org/
 https://datashare.icij.org/
 
 ## Instalar
-- Linux https://icij.gitbook.io/datashare/linux/install-datashare-on-linux
-  - Standalone (jar)
-  - Docker
+
 - Windows https://icij.gitbook.io/datashare/windows/install-datashare-on-windows
   - Homebrew
 - Apple https://icij.gitbook.io/datashare/mac/install-datashare-on-mac
   - Homebrew
+  - Docker
+- Linux https://icij.gitbook.io/datashare/linux/install-datashare-on-linux
+  - Standalone (jar)
   - Docker
 
 ### Actualizar
@@ -36,12 +51,20 @@ https://datashare.icij.org/
 1. Ejecutar el script
 
 ### Instalar Docker
+
 https://docs.docker.com/engine/install/
 
 ## Resetear
 
+- Borrar index y ficheros
+- Borrar ficheros
+- Borrar índice elasticsearch
+- Borrar cola redis
+
 ## Settings
-### Idioma
+
+- Idioma
+- ...
 
 ## Analizar
 
@@ -57,7 +80,9 @@ https://docs.docker.com/engine/install/
 ### Extraer Emails
 
 ## Buscar
+
 ### Vista Documento
+
 1. Texto extraído
 1. Vista previa
 1. Etiquetas y detalles
@@ -84,11 +109,20 @@ https://docs.docker.com/engine/install/
 
 ### Búsquedas simples
 
+- Inicio
+- 
+- 
+- Borrar filtros
+- 
+- 
+- 
+- 
+
 ### Búsquedas avanzadas
 
 ### Buscar por lotes
 
-### Historial
+### Historial de búsquedas
 
 ## Modo Servidor
 
@@ -97,6 +131,7 @@ https://github.com/ICIJ/datashare/wiki/Datashare-Server-Mode
 ## Github
 
 ## Soporte
+
 https://github.com/ICIJ/datashare/wiki/Datashare-Support
 
 ## FAQ
@@ -119,6 +154,7 @@ https://icij.gitbook.io/datashare/faq/table-of-contents
 https://crowdin.com/project/datashare/invite/public?show_welcome&d=c5db50c77f3f3beb9c363ae8e596f2b01136183
 
 # Customize
+
 - Plugins https://github.com/ICIJ/datashare/wiki/Client-%E2%80%BA-Plugins
 - Extensions https://github.com/ICIJ/datashare/wiki/Backend-%E2%80%BA-Extensions
 - Backend API

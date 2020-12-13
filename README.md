@@ -6,6 +6,8 @@
 
 - Como evitar descargar los NLP models en clase?? 
 - Settings : Parser Parallelism ??
+## TODOs
+- Buscar por lotes ejemplo
 ## Datos
 
 * BOE

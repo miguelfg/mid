@@ -2,28 +2,43 @@
 
 ## Descripción
 
+
+## Pasos
+
+1. Intro
+    1. Qué es?
+    1. Qué datos vamos a usar?
+    1. Enlaces importantes
+1. Instalar
+1. Ejecutar
+1. Añadir docs
+    1. Text
+    1. NER
+    1. Emails
+1. Analizar docs
+1. Tour
+1. Ejercicios
+1. Extras: plugins, soporte, traducción, ...
+
+
 ## Preguntas
 
 - Como evitar descargar los NLP models en clase?? 
 - Settings : Parser Parallelism ??
 ## TODOs
-- Buscar por lotes ejemplo
+- fix búsqueda por filepath
+
 ## Datos
 
-* BOE
+* BOE: https://www.boe.es/datosabiertos/ejemplo_script_boe.php
 * TCU
   - https://www.rendiciondecuentas.es/es/noticias/InformesAprobados.html
 * Apache Lista de Correo
-  - Emails
+  - Emails: https://mail-archives.apache.org/mod_mbox/lucene-java-user/
 * Alcaldías
-  - Spreadsheets
+  - Spreadsheets: https://www.mptfp.gob.es/portal/politica-territorial/local/sistema_de_informacion_local_-SIL-/alcaldes_y_concejales.html
+* Luxleaks: DocumentCloud
 
-### Extra
-
-- Wikileaks
-  * https://archive.org/details/RenderedSyria
-  * https://web.archive.org/web/20161109152810/https://file.wikileaks.org/file/podesta-emails/podesta-emails.mbox-2016-11-06.gz
-  
 ## Descargar
 
 https://datashare.icij.org/
@@ -111,10 +126,11 @@ https://docs.docker.com/engine/install/
 
 ### Percepciones/Estadísticas
 
+Ver número de docs
+
 ### Búsquedas simples
 
 - Inicio
-- 
 - 
 - Borrar filtros
 - 
@@ -126,8 +142,8 @@ https://docs.docker.com/engine/install/
 
 1. Operadores de búsqueda: AND, OR, NOT
 1. Exact phrase ""
+1. Proximity
 1. Fuzziness ~
-1. Proximity 
 1. Wildcards ?
 1. Boosting operators
 1. Regex
@@ -136,7 +152,6 @@ https://docs.docker.com/engine/install/
 1. rango de números
 
 ### Ejercicios
-
 
 1. Ver preview de un BOE
 1. Aplicar filtro: de 01/01/2019 a 12/01/2020
@@ -149,8 +164,20 @@ https://docs.docker.com/engine/install/
 1. Ordenar valores en filtro Email por ocurrencia ascendente
 1. Fechas de creación para los pdf de la carpeta BOE
 1. Batch search
+1. Filtrar emails: solo de 'gmail'
+1. Filtrar emails: ¿hay algún hotmail?
 
 ### Buscar por lotes
+
+- Ejemplo 1: Alcaldes csv
+- Visitar un resultado
+- Ejemplo 2: Alcaldes csv con proximidad 2
+- Visitar un resultado
+- Ejemplo 3: Alcaldes csv sin full phrase
+- Filtrar los resultados obtenidos
+- Ejemplo 4: Alcaldes csv con fuzzy 2
+- Descargar resultados
+- Ejemplo 5: Alcaldes csv en una ruta
 
 ### Historial de archivos visitados
 
@@ -177,7 +204,6 @@ https://icij.gitbook.io/datashare/faq/table-of-contents
 1. Etiquetar documentos
 1. Atajos de teclado
 1. Búsquedas masivas (por lotes)
-
 
 # Traducción
 

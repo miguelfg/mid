@@ -58,25 +58,30 @@ https://datashare.icij.org/
   - Standalone (jar)
   - Docker
 
+### Instalar Docker [NO RECOMENDADO]
+
+- https://docs.docker.com/engine/install/
+
 ### Actualizar
 
-- Docker
+1. Desinstalar cualquier versión anterior
+1. Instalar nueva versión
+
+### Actualizar Docker
 
 1. Parar Datashare
+1. Parar containedores docker de redis y elasticsearch
+1. Eliminar imagenes de dichas versiones
 1. Descargar un nuevo script de una versión nueva
 1. Dar persmisos de ejecución al script
 1. Ejecutar el script
 
-### Instalar Docker
+## Resetear ficheros indexados
 
-https://docs.docker.com/engine/install/
-
-## Resetear
-
-- Borrar index y ficheros
-- Borrar ficheros
-- Borrar índice elasticsearch
-- Borrar cola redis
+1. Parar Datashare
+1. Borrar ficheros
+1. Borrar índice elasticsearch
+1. Borrar cola redis
 
 ## Settings
 
@@ -227,4 +232,4 @@ https://crowdin.com/project/datashare/invite/public?show_welcome&d=c5db50c77f3f3
 
 ### Instalar fuentes
 
-https://vitux.com/how-to-install-truetype-fonts-in-ubuntu/
+- https://vitux.com/how-to-install-truetype-fonts-in-ubuntu/

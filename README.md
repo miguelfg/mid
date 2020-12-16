@@ -1,32 +1,27 @@
 # Material para clase de Datashare en máster de investigación
 
-## Descripción
-
-
 ## Pasos
 
 1. Intro
     1. Qué es?
     1. Qué datos vamos a usar?
     1. Enlaces importantes
+1. Documentación
+1. Descargar
 1. Instalar
-1. Ejecutar
-1. Añadir docs
-    1. Text
-    1. NER
-    1. Emails
-1. Analizar docs
 1. Tour
+    1. Añadir docs
+    1. Ejecutar
+    1. Analizar docs
+        1. Text
+        1. NER
+        1. Emails
+    1. Buscar
 1. Ejercicios
 1. Extras: plugins, soporte, traducción, ...
 
 
-## Preguntas
-
-- Como evitar descargar los NLP models en clase?? 
-- Settings : Parser Parallelism ??
-## TODOs
-- fix búsqueda por filepath
+## Descripción
 
 ## Datos
 
@@ -41,11 +36,11 @@
 
 ## Descargar
 
-https://datashare.icij.org/
+- https://datashare.icij.org/
 
 ## Documentación
 
-https://datashare.icij.org/
+- https://icij.gitbook.io/datashare/
 
 ## Instalar
 
@@ -83,38 +78,44 @@ https://datashare.icij.org/
 1. Borrar índice elasticsearch
 1. Borrar cola redis
 
-## Settings
+## Tour
+
+### Settings
 
 - Idioma
-- ...
+- Plugins
+- Extensiones
 
-## Analizar
+### Percepciones/Estadísticas
 
-### Extraer texto
+Ver número de docs
+### Analizar
 
-### NER (Named Entity Recognition)
+#### Extraer texto
+
+#### NER (Named Entity Recognition)
 
 - Extraer Nombres, Lugares y Organizaciones
 - Filtrar
 - Mostrar en vista de documento
 - Borrar
 
-### Extraer Emails
+#### Extraer Emails
 
-## Buscar
+### Buscar
 
-### Vista Documento
+#### Vista Documento
 
 1. Texto extraído
 1. Vista previa
 1. Etiquetas y detalles
 1. Entidades identificadas
 
-### Buscar en campos específicos
+#### Buscar en campos específicos
 
-### Búsqueda dentro del Documento
+#### Búsqueda dentro del Documento
 
-### Filtros
+#### Filtros
 
 1. Favoritos
 1. Etiquetas
@@ -129,21 +130,21 @@ https://datashare.icij.org/
 1. Niveles de extracción
 1. Fecha de indexación
 
-### Percepciones/Estadísticas
+#### Percepciones/Estadísticas 2
 
 Ver número de docs
 
-### Búsquedas simples
+#### Búsquedas simples
 
 - Inicio
-- 
 - Borrar filtros
 - 
 - 
 - 
 - 
+- 
 
-### Búsquedas avanzadas
+#### Búsquedas avanzadas
 
 1. Operadores de búsqueda: AND, OR, NOT
 1. Exact phrase ""
@@ -156,14 +157,12 @@ Ver número de docs
 1. operadores >,=,<
 1. rango de números
 
-### Ejercicios
+#### Ejercicios
 
 1. Ver preview de un BOE
 1. Aplicar filtro: de 01/01/2019 a 12/01/2020
 1. Aplicar filtro: de 01/01/2019 a 12/01/2020
 1. Aplicar filtro por metadata.tika_metadata_author de un doc
-
-
 1. Buscar por NE.location='pontevedra'
 1. Instalar plugin Email
 1. Ordenar valores en filtro Email por ocurrencia ascendente
@@ -172,7 +171,7 @@ Ver número de docs
 1. Filtrar emails: solo de 'gmail'
 1. Filtrar emails: ¿hay algún hotmail?
 
-### Buscar por lotes
+#### Buscar por lotes
 
 - Ejemplo 1: Alcaldes csv
 - Visitar un resultado
@@ -184,23 +183,26 @@ Ver número de docs
 - Descargar resultados
 - Ejemplo 5: Alcaldes csv en una ruta
 
-### Historial de archivos visitados
+#### Historial de archivos visitados
 
-## Modo Servidor
+## Extras
 
-https://github.com/ICIJ/datashare/wiki/Datashare-Server-Mode
+### Modo Servidor
 
-## Github
+- https://github.com/ICIJ/datashare/wiki/Datashare-Server-Mode
 
-## Soporte
+### Github
 
-https://github.com/ICIJ/datashare/wiki/Datashare-Support
+- https://github.com/ICIJ/datashare/wiki/
+### Soporte
 
-## FAQ
+- https://github.com/ICIJ/datashare/wiki/Datashare-Support
 
-https://icij.gitbook.io/datashare/faq/table-of-contents
+### FAQ
 
-## Guías
+- https://icij.gitbook.io/datashare/faq/table-of-contents
+
+### Guías
 
 1. Añadir documentos
 1. Filtrar documentos
@@ -210,11 +212,11 @@ https://icij.gitbook.io/datashare/faq/table-of-contents
 1. Atajos de teclado
 1. Búsquedas masivas (por lotes)
 
-# Traducción
+### Traducción
 
 https://crowdin.com/project/datashare/invite/public?show_welcome&d=c5db50c77f3f3beb9c363ae8e596f2b01136183
 
-# Customize
+### Customize
 
 - Plugins https://github.com/ICIJ/datashare/wiki/Client-%E2%80%BA-Plugins
 - Extensions https://github.com/ICIJ/datashare/wiki/Backend-%E2%80%BA-Extensions
@@ -228,8 +230,8 @@ https://crowdin.com/project/datashare/invite/public?show_welcome&d=c5db50c77f3f3
 - Pages
 - Others
 
-## Otros
+### Otros
 
-### Instalar fuentes
+#### Instalar fuentes
 
 - https://vitux.com/how-to-install-truetype-fonts-in-ubuntu/

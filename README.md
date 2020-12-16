@@ -134,7 +134,10 @@ Ver número de docs
 1. Entidades identificadas
 
 ### Busquedas simples
-    hola
+    "alcaldes"
+    "andalucía"
+    "asociación"
+    "hotmail"
 
 1. Modo vista de resultados
 

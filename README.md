@@ -29,6 +29,15 @@ Miguel Fiandor Gutiérrez
 
 
 ## Qué es?
+### Qué es?
+
+    Datashare is a free open-source desktop application developed by non-profit International Consortium of Investigative Journalists (ICIJ).
+
+    Datashare allows investigative journalists to:
+
+    - access all their documents in one place locally on their computer while securing them from potential third-party interferences
+    - search pdfs, images, texts, spreadsheets, slides and any files, simultaneously
+    - automatically detect and filter by people, organizations and locations
 
 ## Datos
 
@@ -151,7 +160,6 @@ Ver número de docs
 - mismo autor
 - mismo lenguaje
 - ...
-
 
 ### Búsquedas avanzadas
 

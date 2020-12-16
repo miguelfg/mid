@@ -1,6 +1,7 @@
-# Material para clase de Datashare en máster de investigación
+# Workshop Datashare @ICIJ.org
+Miguel Fiandor Gutiérrez
 
-## Pasos
+## Índice
 
 1. Intro
     1. Qué es?
@@ -21,7 +22,7 @@
 1. Extras: plugins, soporte, traducción, ...
 
 
-## Descripción
+## Qué es?
 
 ## Datos
 
@@ -45,24 +46,17 @@
 ## Instalar
 
 - Windows https://icij.gitbook.io/datashare/windows/install-datashare-on-windows
-  - Homebrew
 - Apple https://icij.gitbook.io/datashare/mac/install-datashare-on-mac
-  - Homebrew
-  - Docker
 - Linux https://icij.gitbook.io/datashare/linux/install-datashare-on-linux
-  - Standalone (jar)
-  - Docker
 
-### Instalar Docker [NO RECOMENDADO]
-
-- https://docs.docker.com/engine/install/
+* NO RECOMENDADO usar las instalaciones con docker
 
 ### Actualizar
 
 1. Desinstalar cualquier versión anterior
 1. Instalar nueva versión
 
-### Actualizar Docker
+#### Actualizar Docker
 
 1. Parar Datashare
 1. Parar containedores docker de redis y elasticsearch
@@ -89,11 +83,12 @@
 ### Percepciones/Estadísticas
 
 Ver número de docs
+
 ### Analizar
 
 #### Extraer texto
 
-#### NER (Named Entity Recognition)
+#### Extraer Entidades Nombre
 
 - Extraer Nombres, Lugares y Organizaciones
 - Filtrar
@@ -102,20 +97,18 @@ Ver número de docs
 
 #### Extraer Emails
 
-### Buscar
-
-#### Vista Documento
+### Vista Documento
 
 1. Texto extraído
 1. Vista previa
 1. Etiquetas y detalles
 1. Entidades identificadas
 
-#### Buscar en campos específicos
+### Buscar en campos específicos
 
-#### Búsqueda dentro del Documento
+### Búsqueda dentro del Documento
 
-#### Filtros
+### Filtros
 
 1. Favoritos
 1. Etiquetas
@@ -130,21 +123,11 @@ Ver número de docs
 1. Niveles de extracción
 1. Fecha de indexación
 
-#### Percepciones/Estadísticas 2
+### Percepciones/Estadísticas 2
 
 Ver número de docs
 
-#### Búsquedas simples
-
-- Inicio
-- Borrar filtros
-- 
-- 
-- 
-- 
-- 
-
-#### Búsquedas avanzadas
+### Búsquedas avanzadas
 
 1. Operadores de búsqueda: AND, OR, NOT
 1. Exact phrase ""
@@ -157,7 +140,23 @@ Ver número de docs
 1. operadores >,=,<
 1. rango de números
 
-#### Ejercicios
+### Buscar por lotes
+
+- Ejemplo 1: Alcaldes csv
+- Visitar un resultado
+- Ejemplo 2: Alcaldes csv con proximidad 2
+- Visitar un resultado
+- Ejemplo 3: Alcaldes csv sin full phrase
+- Filtrar los resultados obtenidos
+- Ejemplo 4: Alcaldes csv con fuzzy 2
+- Descargar resultados
+- Ejemplo 5: Alcaldes csv en una ruta
+
+### Historial de archivos visitados
+
+## Ejercicios
+
+### Ejercicios
 
 1. Ver preview de un BOE
 1. Aplicar filtro: de 01/01/2019 a 12/01/2020
@@ -171,19 +170,6 @@ Ver número de docs
 1. Filtrar emails: solo de 'gmail'
 1. Filtrar emails: ¿hay algún hotmail?
 
-#### Buscar por lotes
-
-- Ejemplo 1: Alcaldes csv
-- Visitar un resultado
-- Ejemplo 2: Alcaldes csv con proximidad 2
-- Visitar un resultado
-- Ejemplo 3: Alcaldes csv sin full phrase
-- Filtrar los resultados obtenidos
-- Ejemplo 4: Alcaldes csv con fuzzy 2
-- Descargar resultados
-- Ejemplo 5: Alcaldes csv en una ruta
-
-#### Historial de archivos visitados
 
 ## Extras
 
@@ -194,6 +180,7 @@ Ver número de docs
 ### Github
 
 - https://github.com/ICIJ/datashare/wiki/
+
 ### Soporte
 
 - https://github.com/ICIJ/datashare/wiki/Datashare-Support

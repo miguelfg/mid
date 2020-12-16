@@ -1,4 +1,5 @@
 # Workshop Datashare @ICIJ.org
+
 Miguel Fiandor Gutiérrez
 
 ## Índice
@@ -18,8 +19,9 @@ Miguel Fiandor Gutiérrez
         1. NER
         1. Emails
     1. Buscar
-    1. Filtros
     1. Varios: ordenar, favs, ...
+    1. Filtros
+    1. Búsquedas por metadata
     1. Búsquedas avanzadas
     1. Búsquedas por lotes
 1. Ejercicios
@@ -114,9 +116,20 @@ Ver número de docs
 1. Etiquetas y detalles
 1. Entidades identificadas
 
-### Buscar en campos específicos
+### Busquedas simples
+    hola
+
+1. Modo vista de resultados
 
 ### Búsqueda dentro del Documento
+
+    Ctrl+F
+### Varios
+
+- Ordenar documentos
+- Favoritos
+- Etiquetar documentos
+- Recomendar documentos
 
 ### Filtros
 
@@ -133,25 +146,27 @@ Ver número de docs
 1. Niveles de extracción
 1. Fecha de indexación
 
-### Varios
+### Buscar en campos específicos
 
-- Ordenar documentos
-- Favoritos
-- Etiquetar documentos
-- Recomendar documentos
+- mismo autor
+- mismo lenguaje
+- ...
+
 
 ### Búsquedas avanzadas
 
+https://icij.gitbook.io/datashare/all/search-with-operators
+
 1. Operadores de búsqueda: AND, OR, NOT
-1. Exact phrase ""
-1. Proximity
+1. Wildcards ? *
 1. Fuzziness ~
-1. Wildcards ?
-1. Boosting operators
-1. Regex
-1. Campos de meteadata
-1. operadores >,=,<
-1. rango de números
+1. Exact phrase ""
+1. Proximity ""~
+1. Boosting operators ""^ ()^
+1. Regex: ("Ada Lovelace" OR "Ado Lavelace") AND paris AND /.*\..*\@.*\..*/
+1. Campos de metadata
+1. operadores >,=,<: metadata.tika_metadata_creation_date:>=2010-01-01
+1. rango de números: [min TO max]  {min TO max}
 
 ### Buscar por lotes
 

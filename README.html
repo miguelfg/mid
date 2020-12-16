@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Material para clase de Datashare en máster de investigación</title>
+		<style>
+			body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+	position: absolute;
+	bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+	color: rgb(249, 38, 114);
+	text-decoration: none;
+}
+code {
+	background: none repeat scroll 0 0 #F8F8FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px 	;
+  padding: 0 0.2em;
+}
+.remark-code, .remark-inline-code { font-family: "Bitstream Vera Sans Mono", "Courier", monospace; }
+.remark-code-line-highlighted     { background-color: #373832; }
+.pull-left {
+	float: left;
+	width: 47%;
+}
+.pull-right {
+	float: right;
+	width: 47%;
+}
+.pull-right ~ p {
+	clear: both;
+}
+#slideshow .slide .content code {
+	font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+	font-size: 0.9em;
+	padding: 15px;
+}
+.main-title, .title {
+	background: #272822;
+	color: #777872;
+	text-shadow: 0 0 20px #333;
+}
+.title h1, .title h2, .main-title h1, .main-title h2 {
+	color: #f3f3f3;
+	line-height: 0.8em;
+}
+/* Custom */
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+class: center, middle, main-title
+
+# Material para clase de Datashare en máster de investigación
+
+---
+## Pasos
+
+1. Intro
+ 1. Qué es?
+ 1. Qué datos vamos a usar?
+ 1. Enlaces importantes
+1. Documentación
+1. Descargar
+1. Instalar
+1. Tour
+ 1. Añadir docs
+ 1. Ejecutar
+ 1. Analizar docs
+  1. Text
+  1. NER
+  1. Emails
+ 1. Buscar
+1. Ejercicios
+1. Extras: plugins, soporte, traducción, ...
+
+
+---
+class: center, middle, title
+
+## Descripción
+
+---
+## Datos
+
+- BOE: https://www.boe.es/datosabiertos/ejemplo_script_boe.php
+- TCU
+ - https://www.rendiciondecuentas.es/es/noticias/InformesAprobados.html
+- Apache Lista de Correo
+ - Emails: https://mail-archives.apache.org/mod_mbox/lucene-java-user/
+- Alcaldías
+ - Spreadsheets: https://www.mptfp.gob.es/portal/politica-territorial/local/sistema_de_informacion_local_-SIL-/alcaldes_y_concejales.html
+- Luxleaks: DocumentCloud
+
+
+---
+## Descargar
+
+- https://datashare.icij.org/
+
+
+---
+## Documentación
+
+- https://icij.gitbook.io/datashare/
+
+
+---
+## Instalar
+
+- Windows https://icij.gitbook.io/datashare/windows/install-datashare-on-windows
+ - Homebrew
+- Apple https://icij.gitbook.io/datashare/mac/install-datashare-on-mac
+ - Homebrew
+ - Docker
+- Linux https://icij.gitbook.io/datashare/linux/install-datashare-on-linux
+ - Standalone (jar)
+ - Docker
+
+
+---
+### Instalar Docker [NO RECOMENDADO]
+
+- https://docs.docker.com/engine/install/
+
+
+---
+### Actualizar
+
+1. Desinstalar cualquier versión anterior
+1. Instalar nueva versión
+
+
+---
+### Actualizar Docker
+
+1. Parar Datashare
+1. Parar containedores docker de redis y elasticsearch
+1. Eliminar imagenes de dichas versiones
+1. Descargar un nuevo script de una versión nueva
+1. Dar persmisos de ejecución al script
+1. Ejecutar el script
+
+
+---
+## Resetear ficheros indexados
+
+1. Parar Datashare
+1. Borrar ficheros
+1. Borrar índice elasticsearch
+1. Borrar cola redis
+
+
+---
+class: center, middle, title
+
+## Tour
+
+---
+### Settings
+
+- Idioma
+- Plugins
+- Extensiones
+
+
+---
+### Percepciones/Estadísticas
+Ver número de docs
+
+
+---
+### Analizar
+#### Extraer texto
+#### NER (Named Entity Recognition)
+
+- Extraer Nombres, Lugares y Organizaciones
+- Filtrar
+- Mostrar en vista de documento
+- Borrar
+
+#### Extraer Emails
+
+---
+### Buscar
+#### Vista Documento
+
+1. Texto extraído
+1. Vista previa
+1. Etiquetas y detalles
+1. Entidades identificadas
+
+#### Buscar en campos específicos
+#### Búsqueda dentro del Documento
+#### Filtros
+
+1. Favoritos
+1. Etiquetas
+1. Recomendado por
+1. Tipo de archivo
+1. Fechas de creación
+1. Idiomas
+1. Personas
+1. Organizaciones
+1. Ubicaciones
+1. Rutas
+1. Niveles de extracción
+1. Fecha de indexación
+
+#### Percepciones/Estadísticas 2
+Ver número de docs
+
+#### Búsquedas simples
+
+- Inicio
+- Borrar filtros
+- 
+- 
+- 
+- 
+- 
+
+#### Búsquedas avanzadas
+
+1. Operadores de búsqueda: AND, OR, NOT
+1. Exact phrase &quot;&quot;
+1. Proximity
+1. Fuzziness ~
+1. Wildcards ?
+1. Boosting operators
+1. Regex
+1. Campos de meteadata
+1. operadores &gt;,=,&lt;
+1. rango de números
+
+#### Ejercicios
+
+1. Ver preview de un BOE
+1. Aplicar filtro: de 01/01/2019 a 12/01/2020
+1. Aplicar filtro: de 01/01/2019 a 12/01/2020
+1. Aplicar filtro por metadata.tika_metadata_author de un doc
+1. Buscar por NE.location=&#39;pontevedra&#39;
+1. Instalar plugin Email
+1. Ordenar valores en filtro Email por ocurrencia ascendente
+1. Fechas de creación para los pdf de la carpeta BOE
+1. Batch search
+1. Filtrar emails: solo de &#39;gmail&#39;
+1. Filtrar emails: ¿hay algún hotmail?
+
+#### Buscar por lotes
+
+- Ejemplo 1: Alcaldes csv
+- Visitar un resultado
+- Ejemplo 2: Alcaldes csv con proximidad 2
+- Visitar un resultado
+- Ejemplo 3: Alcaldes csv sin full phrase
+- Filtrar los resultados obtenidos
+- Ejemplo 4: Alcaldes csv con fuzzy 2
+- Descargar resultados
+- Ejemplo 5: Alcaldes csv en una ruta
+
+#### Historial de archivos visitados
+
+---
+class: center, middle, title
+
+## Extras
+
+---
+### Modo Servidor
+
+- https://github.com/ICIJ/datashare/wiki/Datashare-Server-Mode
+
+
+---
+### Github
+
+- https://github.com/ICIJ/datashare/wiki/
+ ---
+### Soporte
+- https://github.com/ICIJ/datashare/wiki/Datashare-Support
+
+
+---
+### FAQ
+
+- https://icij.gitbook.io/datashare/faq/table-of-contents
+
+
+---
+### Guías
+
+1. Añadir documentos
+1. Filtrar documentos
+1. Buscar documentos
+1. Busqueda con operadores y regex
+1. Etiquetar documentos
+1. Atajos de teclado
+1. Búsquedas masivas (por lotes)
+
+
+---
+### Traducción
+https://crowdin.com/project/datashare/invite/public?show_welcome&amp;d=c5db50c77f3f3beb9c363ae8e596f2b01136183
+
+
+---
+### Customize
+
+- Plugins https://github.com/ICIJ/datashare/wiki/Client-%E2%80%BA-Plugins
+- Extensions https://github.com/ICIJ/datashare/wiki/Backend-%E2%80%BA-Extensions
+- Backend API
+- Client API
+- Client Hooks
+- Client Widgets
+- Client Components
+- Widgets
+- Filters
+- Pages
+- Others
+
+
+---
+### Otros
+#### Instalar fuentes
+
+- https://vitux.com/how-to-install-truetype-fonts-in-ubuntu/
+
+
+		</textarea>
+		<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>

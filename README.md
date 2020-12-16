@@ -18,6 +18,10 @@ Miguel Fiandor Gutiérrez
         1. NER
         1. Emails
     1. Buscar
+    1. Filtros
+    1. Varios: ordenar, favs, ...
+    1. Búsquedas avanzadas
+    1. Búsquedas por lotes
 1. Ejercicios
 1. Extras: plugins, soporte, traducción, ...
 
@@ -99,6 +103,10 @@ Ver número de docs
 
 #### Extraer Emails
 
+### Percepciones/Estadísticas 2
+
+Ver número de docs
+
 ### Vista Documento
 
 1. Texto extraído
@@ -125,9 +133,12 @@ Ver número de docs
 1. Niveles de extracción
 1. Fecha de indexación
 
-### Percepciones/Estadísticas 2
+### Varios
 
-Ver número de docs
+- Ordenar documentos
+- Favoritos
+- Etiquetar documentos
+- Recomendar documentos
 
 ### Búsquedas avanzadas
 
